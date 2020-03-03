@@ -63,53 +63,54 @@ The Character Select Scene has button to scroll through all the playable charact
 
 ![Player Main](https://github.com/grayg11/POOSW-Project/blob/master/Design/player%20main.PNG)
 
+The in game menu will show the active players name alon with all their stats. There is also a button for each type of action. Move will generate possible move spaces to select from, attack will allow the player to select an enemy to fight and loads the **Combat UI**, use ability opens a menu that lists possible abilities, and rest will heal the player.
 
 ## In Game Combat
 
 ![Combat](https://github.com/grayg11/POOSW-Project/blob/master/Design/combat.PNG)
+
+The Combat UI has places for both attacker and defender, with associated stats. The UI shows what dice are rolled and has a few texts explaining the attack. There is a modify button if a player can modify the dice roll, and a confirm button that ends the attack and applies all damage, returning to the previous players main state.
 
 
 ## Supporting User Stories
 
 | ID | User Story | Related Component |
 |----|------------|-------------------|
-| 000 | As a User I want to be able to link my account with Spotify so that I can export playlists. | User Dash - Link Spotify |
-| 001 | As a User I want to have a private account so that I can use the product securely | Home Page - Sign Up / User Dash - Account Info |
-| 002 | As a User I want to be able to link my account with Apple Music so that I can export playlists. | User Dash - Link Apple Music |
-| 003 | As a user I want to be able to browse my playlists so that I can select them for export. | User Dash - Poplated List of selected playlists |
-| 004 | As a user I want to see my history so that I know what playlists have been transferred and to where. | User Dash - Explore Playlists |
-| 005 | As a user I want to connect with other Playlist Authority users so that I can send them playlists | User Dash - Friends |
-| 006 | As a user I want to be able to log on to the site so that I can use it | Home Page - Log In |
-| 007 | As a user I want to be able to log off from the site so that I know I have safely disconnected | User Dash - Log Off |
-| 008 | As a user I want to be able to play music from the website | -Not Implemented- |
-| 009 | As a user I want the ability to create a new playlist on the site so that I don't have to log off to create a new playlist| User Dash - Create New Playlist / Playlist Page |
-| 010 | As a user I want the ability to edit playlists on the site so that I don't have to log off to edit playlists as I'm getting ready to send them| User Dash - Edit / Playlist Page |
-| 011 | As a user I want the ability to delete my Playlist Authority account so that I can have peace of mind if I change my mind about using the service| User Dash - Account Info |
-| 012 | As a user I want to be able to access the site with a url so that I can access the site| Home Page |
-| 015 | As a User I want to be able to link my account with Spotify so that I can import playlists. | User Dash - Link Spotify |
-| 016 | As a User I want to be able to link my account with Apple Music so that I can import playlists. | User Dash - Apple Music |
-| 017 | As a user I want to be able to browse my playlists so that I can select them for import. | User Dash - Spotify/Apple Music Playlists and Poplated List of selected playlists | 
+| 1 | As a user I want cantrols so I can interact with the game | All buttons |
+| 2 | As a user I want a camera so I can see the game | In Game Main |
+| 3 | As a user I want a main menu screen so I can navigate through my options. | Main Menu |
+| 4 | As a user I want multiple characters to play with so I have more options available to me | Character Selection |
+| 5 | As a user I want a character to be able to move | In Game Move Button |
+| 6 | As a user I want a character to be able to fight | In Game Attack Button, Combat UI |
+| 7 | As a user I want a character to be able to heal | In Game Rest Button |
+| 8 | As a user I want a character to have special abilities | In Game Use Ability Button |
+| 9 | As a user I want a character selection screen so I can choose the characters I want to play | Character Selection |
+| 10 | As a user I want multiple difficulty levels so I can adjust the game to my skill level | Mode Selection Screen |
+| 12 | As a user I want multiple levels to play on | Mode Selection Screen |
+| 13 | As a user I want a UI so I can interpret the gameplay | All Screens |
+| 14 | As a user I want player stats so I know my health, etc. | In Game UI and Combat UI |
+| 15 | As a user I want dice-based combat | Combat UI |
+
 
 # Resource Management
 
-All resource management will be controlled by AWS
+All resource management will be controlled through Unity and GitHub
 
 # Security
-* We Plan to enforce a Strong Password Policy. (min 10 characters and 1 non alpha)
-* We plan to encrypt our Login Page with SSL encryption.
-* We plan to use a Secure Host and will back up our data to a secure AWS EC2 server.
+
+As SWIA will be distributed by an executable file, and with no user accounts, we will not be implementing any security outside of what Unity already provides.
 
 # Performance
 
-Since we are using AWS EC2 we do not forsee performance issues.
+Users should not encounter any performance issues if they are using a computer made in the last decade.
 
 # Scalability
 
-We may decied to include other external music sites in our product, which would only requires minor additions, otherwise the scalabiility of our product will directly depend on the limits of AWS EC2 free tier.
+The scalability in this game is only limited by our imagination. There will always be room for more players, enemies, weapons, maps, etc. With the use of state macines and classes for each important game aspect, future integration should be relatively easy.
 
 # Interoperability
 
-Our product will use individual API connections for each external service, per account.
+This game will not interact with anything outside of the executable file.
 
 # Internationalization/Localization
 
@@ -121,41 +122,33 @@ The majority of IO handled will be from the user, database, or external sites vi
 - Inputs:
   - Mouse
   - Keyboard
-  - API's
  - Outputs
- 
+  - Error Logging via Unity
  
 # Error Processing
-- Front End Error:
-  * If an error occurs due to user input, then we will catch it, revert the user inputs, and then display a pop-up explaining what the user did wrong. For instance, if a user inputs an incorrect password, the website will refresh the inout window for the password and then inform the user to enter a new password.
-- Back End Error
-  * If an error occurs due to faulty code or by other hidden proccesses, then we will halt the server processes and display a blank page with an error code and basic description of the error.
+- All errors after Build will be dealth with via the Unity Crash Handler.
   
 # Fault Tolerance
 
-When encountering User IO faults, Playlist authority will simply deny the request and prompt the ser to try again.
-For external API faults, PA will display the error to the user and information about it
-For any system faults, the server will shut down and/or restart.
+Any known faults during the development phase will be corrected during testing and not published to the repo until it is fixed.
 
 # Architectural Feasibility
 
-We should encounter minimal problems in this area due to designing around AWS EC2 free tier specs.
+We should encounter minimal problems in this area due to the small footprint the game has. Each level will be its own container and not be able to affect anything outside of it.
 
 # Overengineering
 
-Since our product is a web application we are designing to deliver at the most basic level. We will provide the service in the most basic way that works, which means any future problems that deny service to the user will be dealt with when encountered.
+Over engineering can become a problem in the future due to the many game expansions for Imperial Assault the board game, but we plan on only implementing the core box gameplay before considering any expansions.
 
 # Build-vs-Buy Decisions
 
-- Spotify API
-- Apple Music API
-- Amazon Web Service
-- other third party dependencies
+- Unity 3D for implementation
+- Unity Asset store for audio assets
+- SW Imperial Assault the board game, and Tabltop Simulator for other assets.
 
 # Reuse
 
-The use of a MERN stack architecture will be used for product implementation.
-Playlist Authority will not use any pre-exsisting software, test cases, etc.
+The only thing being reused in this project is the Star Wars IP and the rules and likeness of the board game.
 
 # Change Strategy
 
