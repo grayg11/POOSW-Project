@@ -39,23 +39,25 @@ All data will be stored internally in a Data Manager script This script holds al
 
  ![Main Menu](https://github.com/grayg11/POOSW-Project/blob/master/Design/main%20menu.PNG)
 
-The purpose of Playlist Authority's Home Page is to allow users to log in or register to use our services. There is also an *About Us* section that will have a detailed description of the services we provide. The user can interact with the home page by either entering their existing login credentials and selecting *Log In*, which will direct them to the **User Dash** page or by choosing the "Sign Up" button, which will direct them to a generic site registration page.
+The purpose of the main menu is to allow users the options of selecting a game mode, loading a game save, reading the rules, and exiting the game. The Game Mode button leads to another UI called **Game Modes**
+
 ## Game Modes
 
 ![Game Modes](https://github.com/grayg11/POOSW-Project/blob/master/Design/game%20modes.PNG)
 
-The User Dash is a page that has an organized template where the user has access to the majority of Playlist Authority's services. On the left of the page, with exception to *Create New Playlist*, are buttons that will populate a list of corresponding playlists in the shaded area on the right. When the shaded area has a list of playlists the user can select one and choose *Export*, which will prompt them which streaming service to export the selected playlist to, or the user can *Edit* the playlist, which directs them to the **Playlist Page**. The *Create New Playlist* option on the left also leads to the **Playlist Page**. In the top right of the User Dash are user account options where the user can edit their profile information and friends, link their streaming service accounts, and log out of their account. *Log Out* will direct the user back to the **Home Page**. *Link Service* buttons will generate pop-up windows with that services log in screen.
+The Game Modes UI lists the types of games available to select from. These are Skirmish, Campaign, and Raid, each with their own button that leads to a unique **Mode Selection Screen**
+
 ## Mode Selection Screen
 
 ![Campaign](https://github.com/grayg11/POOSW-Project/blob/master/Design/campaign%20screen.PNG)
 
-The Playlist Page allows users to view or edit a playlist. The shaded middle of the page will show a list of the chosen playlist's songs, or it will be empty if the user was directed here from *Create New Playlist*. The User can edit a playlist by either *Add* or *Remove* song options. When the User is done editing the playlist they choose from the handling options at the bottom of the page. The User can *Save* the playlist to our internal database, *Delete* the playlist from our internal database or its associated streaming service, or *Export* the playlist to a streaming service. 
+The Mode Selection Screen will have a description of the game mode, individual levels of each game mode, mode difficulty buttons and a start button that loads the **Character Select Scene**
 
 ## Character Select Scene
 
 ![Char select](https://github.com/grayg11/POOSW-Project/blob/master/Design/char%20select.PNG)
 
-The purpose of the Export Popup is to give the User the option to name or rename a playlist and to confirm the export to the streaming service. The *Cancel* option closes the popup and takes the User back to the page they are on, and the *Export* option indicates the playlist has been exported and redirects the User to the **User Dash**.
+The Character Select Scene has button to scroll through all the playable characters as well as a visual to who has already been selected. When you select a character you will be prompted to confirm or go back. Once the party is full the level will load.
 
 ## In Game Main
 
