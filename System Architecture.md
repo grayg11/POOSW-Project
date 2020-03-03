@@ -4,12 +4,15 @@
 ![Context Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Context%20Diagram%20(1).png)
 
 A user will access Imperial Assault from an executable file. Once the executable is run, the game will load into the Main Menu Screen.
-
 User Story: 3	As a user I want a main menu screen so I can navigate through my options	Acceptance Criteria: Given I am a user, when the game starts, then there is a main menu screen loaded
 
 ![Container Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Container%20Diagram.png)
 
-A User access our web application when they visit PlaylistAuthority.org. The web application returns to the users browser, the single page application, which has all the functionality of the services provided. The single page app makes API calls to the internal API application which houses the import/export functionalities. The API application can then read/write to the database and access Spotify and Apple music.
+A user will access Imperial Assault from an executable file. Once the executable is run, the game will load into the Main Menu Screen. 
+The main menu will have options for selecting game modes, loading game saves, rules, and exit game option. Once the user has selected a game mode the character selection scene is loaded. Here the user gets to choose a part of 4 charatcers. Once all party members are chosen, according to what was selected in the main menu, the appropriate game level will be loaded.
+
+User Stories: 3, 4, 9, 10, 12.
+
 
 ![Component Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Component%20Diagram.png)
 
