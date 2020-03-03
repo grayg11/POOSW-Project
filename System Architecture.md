@@ -4,6 +4,7 @@
 ![Context Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Context%20Diagram%20(1).png)
 
 A user will access Imperial Assault from an executable file. Once the executable is run, the game will load into the Main Menu Screen.
+
 User Story: 3	As a user I want a main menu screen so I can navigate through my options	Acceptance Criteria: Given I am a user, when the game starts, then there is a main menu screen loaded
 
 ![Container Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Container%20Diagram.png)
@@ -16,11 +17,9 @@ User Stories: 3, 4, 9, 10, 12.
 
 ![Component Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Component%20Diagram.png)
 
-The main components of the Signle page application are the Sign in controller and the account controller. The sign in controller ses a security component to safely access the user credentials and database. The Account controller uses facades for both Spotify and Apple music in order to use their funtionalities.
+The main components of each level are borken down into a Game State Controller (FSM), Camera controller, and a UI controller. The camer and UI controllers provide all player interaction with the game, while the game state controller provides the level creation and holds all states for the game loop. The game loop will continue until eithe the win or lose state is called. From both the win or lose state the user is directed back to the main menu screen.
 
-![Sequence Diagram](https://docs.google.com/drawings/d/1NEmfRJ-Wo-9ial2MltMwgyQim834q1XObPhoLf7_sVQ/edit?usp=sharing)
-
-![Event Storming](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Event%20Storming%20Drawing.png)
+User Stories: 1, 2, 3, 4, 9, 12, 13, 16
 
 # Major Classes
 
