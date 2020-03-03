@@ -23,7 +23,7 @@ User Stories: 1, 2, 3, 4, 9, 12, 13, 16
 
 # Major Classes
 
-![Class Diagram](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Class%20Diagram.png)
+![Class Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Class%20Diagram.png)
 
 The User class, will contain all account handling like registration, deletion, log in/out, and log in credentials. The playlist class will be able to add songs, remove songs, create new playlists, and delete playlists. Each API class will have a link, import and export method.
 
