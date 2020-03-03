@@ -31,43 +31,11 @@ User Stories: 1, 2, 4, 5, 6, 7, 8, 11, 12, 14, 16
 
 # Data Design
 
-![Data ERD](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Database%20ERD.png)
-
-The data Playlist Authority maintains is divided into four sub-categories for each User account. These categories are **Account Info**, **Friends**, **History**, and **Playlist**. 
-
-### Account Info
-The Account Info is accessed by a unique User ID. It will store all user specific information such as the User's name, email, and password. Any streaming service keys that the User has linked are also stored here, as well as a pointer to the User's friend list. With this pointer we can access the Friends sub category
-
-### Friends
-The Friends data will simply store and list each Friend User ID and Name. The Friend User ID is also accessed by the Shared History.
-
-### History
-All data stored in History is sub-catergorized by a type; either Exported, Shared, or Saved. This stores pointers to each sub-catergory. Each of these types hold a Playlist ID that can be used to get any specific playlist data stored in the database.
-
-* #### Export History
-Export History stores the Playlist ID, which service the playlist was exported to and the date time group.
-
-* #### Shared History
-Shared History stores the Playlist ID, a boolean for "Shared To" or "Shared From", the Friend User ID, and the date time group.
-
-* #### Saved History
-Saved History stores the Playlist ID and the date time group.
-
-### Saved Playlist
-Saved Playlist is accessed by a Playlist ID and stores the playlist name, the number of songs and a pointer to a list of songs associated to that playlist.
-
-* #### Playlist Songs
-Playlist Songs stores each Song ID and Song Name for the corresponding playlist.
- 
- # Business Rules
-
-* Application must be accessable to all internet users.
-* Users accounts must be secure.
-* Application must keep a history of all user interations.
+All data will be stored internally in a Data Manager script This script holds all level unique information. All in game information is stored in the GameStateController, Data MAnager, or Unit scripts.
 
 # User Interface Design
 
-## Home Page
+## Main Menu
 
  ![Home Page](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/User%20Interface/HomePageUI.PNG)
 
