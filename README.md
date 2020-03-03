@@ -45,7 +45,7 @@ Ian Pleau
 - Design Documents:
   - [System Architecture]()
   - [Product Demonstration]()
-- [Code]()
+- [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
   
   ## Sprint 4
@@ -57,7 +57,7 @@ Ian Pleau
 - Design Documents:
   - [System Architecture]()
   - [Product Demonstration]()
-- [Code]()
+- [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
 
@@ -70,7 +70,7 @@ Ian Pleau
 - Design Documents:
   - [System Architecture]()
   - [Product Demonstration]()
-- [Code]()
+- [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
 
@@ -83,6 +83,6 @@ Ian Pleau
 - Design Documents:
   - [System Architecture]()
   - [Product Demonstration]()
-- [Code]()
+- [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
