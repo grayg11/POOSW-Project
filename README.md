@@ -59,7 +59,7 @@ Ian Pleau
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
-- [Responsibilities]()
+- [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
 
 ## Sprint 5
 
@@ -72,7 +72,7 @@ Ian Pleau
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
-- [Responsibilities]()
+- [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
 
 ## Sprint 6
 
@@ -85,4 +85,4 @@ Ian Pleau
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
-- [Responsibilities]()
+- [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
