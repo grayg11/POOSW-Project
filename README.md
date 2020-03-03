@@ -85,4 +85,5 @@ Ian Pleau
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
+- [Manual Tests](https://docs.google.com/spreadsheets/d/1JcxUd5jpfakA8re_4uaFiIWlIkV9ZzQa8ZSrNnL_3fI/edit?usp=sharing)
 - [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
