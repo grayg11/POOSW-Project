@@ -37,6 +37,7 @@ public class mainmenu : MonoBehaviour
     public static int gameType = 0;
 
 
+
     public void gameMode()
     {
         gamemodeBut.transform.gameObject.SetActive(false);
