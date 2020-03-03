@@ -3,9 +3,11 @@
 
 ![Context Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Context%20Diagram%20(1).png)
 
-A user will access Playlist authority via their web browser. Playlist Authority will allow the user to connect to Spotify and Apple music in order to import and export playlists, as well as a database to store all user information, history, etc.
+A user will access Imperial Assault from an executable file. Once the executable is run, the game will load into the Main Menu Screen.
 
-![Container Diagram](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Container%20Diagram.jpg)
+User Story: 3	As a user I want a main menu screen so I can navigate through my options	Acceptance Criteria: Given I am a user, when the game starts, then there is a main menu screen loaded
+
+![Container Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Container%20Diagram.png)
 
 A User access our web application when they visit PlaylistAuthority.org. The web application returns to the users browser, the single page application, which has all the functionality of the services provided. The single page app makes API calls to the internal API application which houses the import/export functionalities. The API application can then read/write to the database and access Spotify and Apple music.
 
