@@ -11,7 +11,7 @@ User Story: 3	As a user I want a main menu screen so I can navigate through my o
 
 A User access our web application when they visit PlaylistAuthority.org. The web application returns to the users browser, the single page application, which has all the functionality of the services provided. The single page app makes API calls to the internal API application which houses the import/export functionalities. The API application can then read/write to the database and access Spotify and Apple music.
 
-![Component Diagram](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Component%20Diagram.jpg)
+![Component Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Component%20Diagram.png)
 
 The main components of the Signle page application are the Sign in controller and the account controller. The sign in controller ses a security component to safely access the user credentials and database. The Account controller uses facades for both Spotify and Apple music in order to use their funtionalities.
 
