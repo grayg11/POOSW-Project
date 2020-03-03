@@ -3,7 +3,7 @@
 
 ![System Context](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/System%20Context.PNG)
 
-![Context Diagram](https://github.com/Joseph-Kocis/Playlist-Authority/blob/master/Artifacts/Data%20Design/Context%20Diagram.jpg)
+![Context Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Context%20Diagram%20(1).png)
 
 A user will access Playlist authority via their web browser. Playlist Authority will allow the user to connect to Spotify and Apple music in order to import and export playlists, as well as a database to store all user information, history, etc.
 
