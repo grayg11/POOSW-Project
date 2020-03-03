@@ -32,7 +32,7 @@ Ian Pleau
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
-  - [Product Demonstration]()
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 
 ## Sprint 3
 
@@ -44,7 +44,7 @@ Ian Pleau
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
-  - [Product Demonstration]()
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
   
@@ -56,7 +56,7 @@ Ian Pleau
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
-  - [Product Demonstration]()
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
@@ -69,7 +69,7 @@ Ian Pleau
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
-  - [Product Demonstration]()
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
@@ -82,7 +82,7 @@ Ian Pleau
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
-  - [Product Demonstration]()
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
 - [Tests]()
 - [Responsibilities]()
