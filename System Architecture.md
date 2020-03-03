@@ -25,7 +25,9 @@ User Stories: 1, 2, 3, 4, 9, 12, 13, 16
 
 ![Class Diagram](https://github.com/grayg11/POOSW-Project/blob/master/Design/Class%20Diagram.png)
 
-The User class, will contain all account handling like registration, deletion, log in/out, and log in credentials. The playlist class will be able to add songs, remove songs, create new playlists, and delete playlists. Each API class will have a link, import and export method.
+The State Machine class has a method to change a state, each state is an abstract class which game state class uses. The GameStateController implements state machine and holds references to all other main classes. The camera controller has methods to read in user input to change the camera position. The UI controller holds methods for each interactable button in the scene. The Level Gen has methods that create a map visually, and in data to be used in pathfinding. It also spawns the playable and non playable characters. Each character has a unit script that holds all statistical data for itself and also has a method to pathfind for movement.
+
+User Stories: 1, 2, 4, 5, 6, 7, 8, 11, 12, 14, 16
 
 # Data Design
 
