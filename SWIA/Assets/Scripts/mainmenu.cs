@@ -5,11 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class mainmenu : MonoBehaviour
+public class mainmenu : MonoBehaviour, Imainmenu
 {
     void Start()
     {
-        
+
     }
 
     public Button gamemodeBut;
@@ -33,6 +33,7 @@ public class mainmenu : MonoBehaviour
     public GameObject campaignPanel;
     public TMPro.TextMeshProUGUI campaignText;
     public static string levelName;
+    public string lvlName;
     public GameObject raidPanel;
     public static int gameType = 0;
 
@@ -104,12 +105,12 @@ public class mainmenu : MonoBehaviour
         else if (number == 1)
         {
             campaignText.text = string.Format("This is the description for s2");
-            levelName = "Skirmish1";
+            levelName = "Skirmish2";
         }
         else
         {
             campaignText.text = string.Format("This is the description for s3");
-            levelName = "Skirmish1";
+            levelName = "Skirmish3";
         }
     }
 
@@ -165,17 +166,17 @@ public class mainmenu : MonoBehaviour
         if (number == 0)
         {
             campaignText.text = string.Format("This is the description for c1");
-            levelName = "Campaign1Level1";
+            lvlName = levelName = "Campaign1Level1";
         }
         else if (number == 1)
         {
             campaignText.text = string.Format("This is the description for c2");
-            levelName = "Campaign2Level1";
+            lvlName = levelName = "Campaign2Level1";
         }
         else
         {
             campaignText.text = string.Format("This is the description for c3");
-            levelName = "Campaign3Level1";
+            lvlName = levelName = "Campaign3Level1";
         }
     }
 
@@ -188,7 +189,7 @@ public class mainmenu : MonoBehaviour
 
     public void campaignBack()
     {
-        campaignSelect(-1);
+        campaignSelect(0);
         skirmishBut.gameObject.SetActive(true);
         campaignBut.gameObject.SetActive(true);
         RNGBut.gameObject.SetActive(true);
