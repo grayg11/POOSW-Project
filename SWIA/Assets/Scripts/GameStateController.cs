@@ -37,8 +37,8 @@ public class GameStateController : StateMachine
         items.Add("medpack", 1);
         ChangeState<InitState>();
         //gameType = mainmenu.gameType;
-        difficulty = mainmenu.gameDifficulty;
         gameType = 1;
+        difficulty = mainmenu.gameDifficulty;
     }
 
     void Update()

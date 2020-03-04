@@ -35,7 +35,7 @@ public class mainmenu : MonoBehaviour, Imainmenu
     public static string levelName;
     public string lvlName;
     public GameObject raidPanel;
-    public static int gameType = 0;
+    public static int gameType = 1;
 
 
     public void gameMode()
@@ -182,7 +182,7 @@ public class mainmenu : MonoBehaviour, Imainmenu
 
     public void campaignStart()
     {
-        gameType = 1;
+        gameType = 2;
         Debug.Log("Campaign Diff " + gameDifficulty);
         SceneManager.GetSceneByName("Character Select");
     }

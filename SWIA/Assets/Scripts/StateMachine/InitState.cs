@@ -4,17 +4,18 @@ using System.Collections.Generic;
 
 public class InitState : GameState
 {
-
+    private int gameType;
     public override void Enter()
     {
         base.Enter();
+        gameType = owner.gameType;
         StartCoroutine(Init());     
     }
 
     IEnumerator Init()
     {
-
-        if (owner.gameType == 1)
+        Debug.Log(owner.gameType + ", " + gameType);
+        if (gameType == 1 || owner.gameType == 1)
         {
             Debug.Log("RAID mode");
 

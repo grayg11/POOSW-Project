@@ -204,6 +204,11 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 898008917}
+    - target: {fileID: 6613674985230455877, guid: 31063c14475b54349a877836ac563faf,
+        type: 3}
+      propertyPath: gameType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6613674985230455878, guid: 31063c14475b54349a877836ac563faf,
         type: 3}
       propertyPath: m_Name
@@ -281,6 +286,11 @@ PrefabInstance:
     - target: {fileID: 3539128070818527854, guid: 5d766aac6d6f64a499d6cdaff1bc067e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539128070818527855, guid: 5d766aac6d6f64a499d6cdaff1bc067e,
+        type: 3}
+      propertyPath: skirmishTiles.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3539128070818527855, guid: 5d766aac6d6f64a499d6cdaff1bc067e,
