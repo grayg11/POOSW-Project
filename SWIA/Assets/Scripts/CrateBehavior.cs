@@ -23,8 +23,7 @@ public class CrateBehavior : MonoBehaviour
     {
         //CurrentState.health++;
         //Debug.Log(("interact with crate" + this.transform.gameObject));
-        if(GSC.map.SelectedUnit != null)
-            SkillTest();
+        SkillTest();
 
     }
     

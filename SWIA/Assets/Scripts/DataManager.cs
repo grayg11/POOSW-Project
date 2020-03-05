@@ -28,6 +28,7 @@ public class DataManager : MonoBehaviour
     public Dictionary<Vector2, GameObject> allTiles;
     public int allTilesLen;
 
+    public List<WeaponType> allWeapons;
     public UnitType[] heroTypes;    // Diala, Fenn, Garkhaan, Gideon, Jyn, Mak
     public UnitType[] enemyTypes;   // StormTrooper
     public DieTypes[] dice;         // red - 0, yellow - 1, green - 2, blue - 3, black - 4, white - 5

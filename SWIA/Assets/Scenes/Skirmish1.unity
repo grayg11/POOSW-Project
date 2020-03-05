@@ -1578,9 +1578,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7370362974277826670, guid: da4ceff036e753c4f84dbe1d4320fa23,
         type: 3}
+      propertyPath: allWeapons.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370362974277826670, guid: da4ceff036e753c4f84dbe1d4320fa23,
+        type: 3}
+      propertyPath: allWeapons.Array.data[0].weaponDice.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370362974277826670, guid: da4ceff036e753c4f84dbe1d4320fa23,
+        type: 3}
+      propertyPath: allWeapons.Array.data[0].surgeAbilities.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370362974277826670, guid: da4ceff036e753c4f84dbe1d4320fa23,
+        type: 3}
       propertyPath: GSC
       value: 
       objectReference: {fileID: 6613674986137105300}
+    - target: {fileID: 7370362974277826670, guid: da4ceff036e753c4f84dbe1d4320fa23,
+        type: 3}
+      propertyPath: allWeapons.Array.data[0].weaponDice.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7370362974277826671, guid: da4ceff036e753c4f84dbe1d4320fa23,
         type: 3}
       propertyPath: m_Name
@@ -2145,6 +2165,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8434348288413743620}
+    - target: {fileID: 219678302, guid: 1e92a5d50afc1454c927ce5432f7cf69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 241980068, guid: 1e92a5d50afc1454c927ce5432f7cf69, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
