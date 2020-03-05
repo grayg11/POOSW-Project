@@ -428,7 +428,7 @@ public class Pathfinding : MonoBehaviour
         // Test units movement method against terrain flags to check if they can
         bool openSpace = true;
 
-        if (isMove)
+        if (isMove || GSC.moving)
         {
             if (GSC.selectedUnit.GetComponent<Unit>().unit < 6)
             {
@@ -464,7 +464,6 @@ public class Pathfinding : MonoBehaviour
     {
 
         TileType tt = tileTypes[GSC.data.tiles[targetX, targetY]];
-
         if (UnitCanEnterTile(targetX + (int)GSC.data.minX, targetY + (int)GSC.data.minY, isMove) == false)
             return Mathf.Infinity;
 

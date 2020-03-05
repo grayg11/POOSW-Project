@@ -123,15 +123,12 @@ public class Unit : MonoBehaviour
 	public void NextTurn()
 	{
 		remainingMovement = movement;
-		Debug.Log("Starting movement = " + remainingMovement);
 
 		// Make sure to wrap-up any outstanding movement left over.
 		while (currentPath != null && remainingMovement > 0)
 		{
 			AdvancePathing();
 		}
-
-		Debug.Log("movement left = " + movement);
 
 		// Remove move spaces
 		if (GSC.gameType == 1)

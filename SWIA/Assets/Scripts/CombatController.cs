@@ -108,6 +108,8 @@ public class CombatController : MonoBehaviour
             weaponImg.sprite = attacker.weapon.weaponImage;
             defenderImg.transform.gameObject.SetActive(true);
             defenderImg.sprite = defender.playerImage;
+            defenderImg.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = defender.health.ToString();
+            defenderImg.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = defender.MaxMovemment.ToString();
             enemyAttackerImg.transform.gameObject.SetActive(false);
             heroDefender.SetActive(false);
 

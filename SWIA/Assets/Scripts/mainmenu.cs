@@ -35,7 +35,7 @@ public class mainmenu : MonoBehaviour
     public static string levelName = "Skirmish1";
     public string lvlName;
     public GameObject raidPanel;
-    public static int gameType = 1;
+    public static int gameType;
 
 
     public void gameMode()

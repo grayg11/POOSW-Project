@@ -57,10 +57,10 @@ public class DataManager : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             UnitType ut;
-            if (GSC.gameType == 1)
+            //if (GSC.gameType == 1)
                 ut = heroTypes[i+2]; // unitTypes[CharacterSelection.party[i]];
-            else
-                ut = heroTypes[CharacterSelection.party[i]];
+            //else
+            //    ut = heroTypes[CharacterSelection.party[i]];
             Vector3 position = GSC.generator.playerSpawns[i] + ut.tileVisualPrefab.transform.position;
             GameObject go = Instantiate(ut.tileVisualPrefab, position, ut.tileVisualPrefab.transform.rotation);
             go.GetComponent<Unit>().map = GSC.map;
