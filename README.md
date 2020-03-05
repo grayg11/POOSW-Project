@@ -46,7 +46,7 @@ Ian Pleau
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
-- [Tests]()
+- [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
   
   ## Sprint 4
 
@@ -58,7 +58,7 @@ Ian Pleau
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
-- [Tests]()
+- [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
 - [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
 
 ## Sprint 5
@@ -71,7 +71,7 @@ Ian Pleau
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
-- [Tests]()
+- [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
 - [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
 
 ## Sprint 6
@@ -84,6 +84,6 @@ Ian Pleau
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
   - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
 - [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
-- [Tests]()
+- [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
 - [Manual Tests](https://docs.google.com/spreadsheets/d/1JcxUd5jpfakA8re_4uaFiIWlIkV9ZzQa8ZSrNnL_3fI/edit?usp=sharing)
 - [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
