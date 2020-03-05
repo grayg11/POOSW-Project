@@ -69,6 +69,7 @@ public class Unit : MonoBehaviour
 		// Smoothly animate towards the correct map tile.
 		transform.position = Vector3.Lerp(transform.position, newPos, 5f * Time.deltaTime);
 
+		// Change rotation when moving
 		//transform.GetChild(0).rotation = Quaternion.Lerp(transform.GetChild(0).rotation, Quaternion.LookRotation(newDirection - currDirection, Vector3.back) , 3f * Time.deltaTime);
 	}
 
@@ -87,7 +88,7 @@ public class Unit : MonoBehaviour
 
 		// Get cost from current tile to next tile
 		if (GSC.gameType == 1)
-			remainingMovement -= (int)GSC.path.CostToEnterTile(currentPath[0].x, currentPath[0].y, currentPath[1].x, currentPath[1].y);
+			remainingMovement -= (int)GSC.path.CostToEnterTile(currentPath[0].x, currentPath[0].y, currentPath[1].x, currentPath[1].y, true);
 		else
 			remainingMovement -= (int)map.CostToEnterTile(currentPath[0].x, currentPath[0].y, currentPath[1].x, currentPath[1].y);
 
@@ -123,6 +124,7 @@ public class Unit : MonoBehaviour
 	{
 		remainingMovement = movement;
 		Debug.Log("Starting movement = " + remainingMovement);
+
 		// Make sure to wrap-up any outstanding movement left over.
 		while (currentPath != null && remainingMovement > 0)
 		{
@@ -131,6 +133,7 @@ public class Unit : MonoBehaviour
 
 		Debug.Log("movement left = " + movement);
 
+		// Remove move spaces
 		if (GSC.gameType == 1)
 		{
 			foreach (KeyValuePair<Vector2, GameObject> go in GSC.data.moveSpaces)
@@ -185,9 +188,9 @@ public class Unit : MonoBehaviour
 	{
 		if (health <= 0)
 		{
-			for ( int i = 0; i < owner.enemies.Count; i++)
+			for (int i = 0; i < owner.enemies.Count; i++)
 			{
-				
+
 				if (GameObject.ReferenceEquals(this.gameObject, owner.enemies[i]))
 				{
 					owner.enemies.RemoveAt(i);

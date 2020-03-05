@@ -35,10 +35,11 @@ public class GameStateController : StateMachine
 
         items = new Dictionary<string, int>();
         items.Add("medpack", 1);
-        ChangeState<InitState>();
-        //gameType = mainmenu.gameType;
-        gameType = 1;
+        gameType = mainmenu.gameType;
+        //gameType = 1;
         difficulty = mainmenu.gameDifficulty;
+        
+        ChangeState<InitState>();
     }
 
     void Update()

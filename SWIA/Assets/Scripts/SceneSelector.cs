@@ -17,8 +17,8 @@ public class SceneSelector : MonoBehaviour
         
     }
 
-    public void LoadCharSelect()
+    public void LoadMainMenu()
     {
-        SceneManager.LoadScene("Character Select");
+        SceneManager.LoadScene("Main Menu");
     }
 }

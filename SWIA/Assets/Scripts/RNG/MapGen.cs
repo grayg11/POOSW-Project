@@ -122,7 +122,7 @@ public class MapGen : MonoBehaviour
 
         for (int i = 0; i < 30; i++)
         {
-            GameObject sp = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count-1)];
+            GameObject sp = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count - 1)];
             spawnPoints.Remove(sp);
 
             addNextRoom(sp);
@@ -140,7 +140,7 @@ public class MapGen : MonoBehaviour
 
     void addExits(GameObject nextTile, int cameFrom)
     {
-        
+
         GameObject sp = nextTile.GetComponent<Room>().northExit;
         if (sp != null && cameFrom != 1)
         {
@@ -284,7 +284,7 @@ public class MapGen : MonoBehaviour
     {
         GameObject nextTile;
         Vector3 position;
-        
+
         if (sp.name.Equals("N exit"))
         {
             nextTile = forestEndCaps[0];
@@ -541,8 +541,14 @@ public class MapGen : MonoBehaviour
         GSC.data.maxX = maxX;
         GSC.data.maxY = maxY;
 
-        // Allocate our map tiles
+        // Allocate our map tiles, init to oob
         tiles = new int[mapSizeX, mapSizeY];
+        for (int i = 0; i < mapSizeX; i++)
+        {
+            for (int j = 0; j < mapSizeY; j++)
+                tiles[i, j] = 18;
+        }
+
         GSC.data.clickables = new Dictionary<Vector2, ClickableTile>();
 
         int x, y;

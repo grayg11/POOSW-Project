@@ -48,7 +48,7 @@ public class CharacterSelection : MonoBehaviour
     void Update()
     {
         if (party.Count >= 4)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(mainmenu.levelName);
     }
 
     public void Next()

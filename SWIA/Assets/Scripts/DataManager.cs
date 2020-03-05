@@ -56,7 +56,11 @@ public class DataManager : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            UnitType ut = heroTypes[i+2]; // unitTypes[CharacterSelection.party[i]];
+            UnitType ut;
+            if (GSC.gameType == 1)
+                ut = heroTypes[i+2]; // unitTypes[CharacterSelection.party[i]];
+            else
+                ut = heroTypes[CharacterSelection.party[i]];
             Vector3 position = GSC.generator.playerSpawns[i] + ut.tileVisualPrefab.transform.position;
             GameObject go = Instantiate(ut.tileVisualPrefab, position, ut.tileVisualPrefab.transform.rotation);
             go.GetComponent<Unit>().map = GSC.map;
@@ -128,15 +132,15 @@ public class DataManager : MonoBehaviour
         int max = GSC.generator.enemySpawns.Count;
         int val;
 
-        if (GSC.difficulty == 0) // easy
+        if (GSC.difficulty == 0)        // easy
         {
             val = Mathf.RoundToInt(Random.Range(.4f * max, .5f * max));
         }
-        else if (GSC.difficulty == 1) // normal
+        else if (GSC.difficulty == 1)   // normal
         {
             val = Mathf.RoundToInt(Random.Range(.25f * max, .4f * max));
         }
-        else // hard
+        else                            // hard
         {
             val = Mathf.RoundToInt(Random.Range(.1f * max, .3f * max));
         }

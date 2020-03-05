@@ -84,7 +84,7 @@ public class Pathfinding : MonoBehaviour
             if (check1 == 12 || check1 == 13)
                 return false;
 
-            if (check1 != 4 && check1 != 5 && check1 != 8 && check1 != 9 && orig != 0 && orig != 1 && orig != 8 && orig!= 0)
+            if (check1 != 4 && check1 != 5 && check1 != 8 && check1 != 9 && orig != 0 && orig != 1 && orig != 8 && orig != 0)
             {
                 check2 = generator.tiles[x, y + 1];
                 if (check2 != 6 && check2 != 7 && check2 != 10 && check2 != 11)
@@ -174,7 +174,7 @@ public class Pathfinding : MonoBehaviour
         //selectedUnit.GetComponent<Unit>().currentPath = null;
 
         // If Invalid terrain is selected return now.
-        if (UnitCanEnterTile(x, y) == false)
+        if (UnitCanEnterTile(x, y, isMove) == false)
         {
             return;
         }
@@ -226,7 +226,7 @@ public class Pathfinding : MonoBehaviour
             foreach (Node n in u.neighbors)
             {
                 //float alt = dist[u] + u.DistanceTo(n);
-                float alt = dist[u] + CostToEnterTile(u.x, u.y, n.x, n.y);
+                float alt = dist[u] + CostToEnterTile(u.x, u.y, n.x, n.y, isMove);
                 if (alt < dist[n])
                 {
                     dist[n] = alt;
@@ -373,7 +373,7 @@ public class Pathfinding : MonoBehaviour
             foreach (Node n in u.neighbors)
             {
                 //float alt = dist[u] + u.DistanceTo(n);
-                float alt = dist[u] + CostToEnterTile(u.x, u.y, n.x, n.y);
+                float alt = dist[u] + CostToEnterTile(u.x, u.y, n.x, n.y, isMove);
                 if (alt < dist[n])
                 {
                     dist[n] = alt;
@@ -423,27 +423,49 @@ public class Pathfinding : MonoBehaviour
     }
 
     // CostToEnterTile and GeneratPathTo
-    public bool UnitCanEnterTile(int x, int y)
+    public bool UnitCanEnterTile(int x, int y, bool isMove)
     {
         // Test units movement method against terrain flags to check if they can
+        bool openSpace = true;
+
+        if (isMove)
+        {
+            if (GSC.selectedUnit.GetComponent<Unit>().unit < 6)
+            {
+                foreach (GameObject enemy in GSC.enemies)
+                {
+                    if (enemy.GetComponent<Unit>().tileX == x && enemy.GetComponent<Unit>().tileY == y)
+                        openSpace = false;
+                }
+            }
+            else if (GSC.selectedUnit.GetComponent<Unit>().unit >= 6)
+            {
+                foreach (GameObject hero in GSC.heroes)
+                {
+                    if (hero.GetComponent<Unit>().tileX == x && hero.GetComponent<Unit>().tileY == y)
+                        openSpace = false;
+                }
+            }
+        }
+
 
         GameObject go;
         bool walkable;
-        if (GSC.data.allTiles.TryGetValue(new Vector2(x, y), out go))
+        if (GSC.data.allTiles.TryGetValue(new Vector2(x, y), out go) && openSpace)
             walkable = go.GetComponent<Tile>().isWalkable;
         else
             walkable = false;
-            
+
         return walkable;
     }
 
     // Called from GeneratePathTo and Unit pathing
-    public float CostToEnterTile(int sourceX, int sourceY, int targetX, int targetY)
+    public float CostToEnterTile(int sourceX, int sourceY, int targetX, int targetY, bool isMove)
     {
 
         TileType tt = tileTypes[GSC.data.tiles[targetX, targetY]];
 
-        if (UnitCanEnterTile(targetX + (int)GSC.data.minX, targetY + (int)GSC.data.minY) == false)
+        if (UnitCanEnterTile(targetX + (int)GSC.data.minX, targetY + (int)GSC.data.minY, isMove) == false)
             return Mathf.Infinity;
 
         float cost = tt.movementCost;
@@ -459,7 +481,7 @@ public class Pathfinding : MonoBehaviour
                 if (targetX > sourceX)
                 {
                     if (targetY > sourceY)
-                    {
+                    {   // up right
                         if ((GSC.data.tiles[sourceX, sourceY + 1] == 19 || GSC.data.tiles[sourceX, sourceY + 1] == 18)
                             && (GSC.data.tiles[sourceX + 1, sourceY] == 19 || GSC.data.tiles[sourceX + 1, sourceY] == 18))
                         {
@@ -467,7 +489,7 @@ public class Pathfinding : MonoBehaviour
                         }
                     }
                     else
-                    {
+                    {   // up left
                         if ((GSC.data.tiles[sourceX, sourceY - 1] == 19 || GSC.data.tiles[sourceX, sourceY - 1] == 18)
                             && (GSC.data.tiles[sourceX + 1, sourceY] == 19 || GSC.data.tiles[sourceX + 1, sourceY] == 18))
                         {

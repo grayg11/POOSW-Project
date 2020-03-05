@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class mainmenu : MonoBehaviour, Imainmenu
+public class mainmenu : MonoBehaviour
 {
     void Start()
     {
@@ -32,7 +32,7 @@ public class mainmenu : MonoBehaviour, Imainmenu
     public static int gameDifficulty;
     public GameObject campaignPanel;
     public TMPro.TextMeshProUGUI campaignText;
-    public static string levelName;
+    public static string levelName = "Skirmish1";
     public string lvlName;
     public GameObject raidPanel;
     public static int gameType = 1;
