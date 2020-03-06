@@ -47,33 +47,57 @@ MonoBehaviour:
   GSC: {fileID: 0}
   spawnPoints: []
   forestEndCaps:
-  - {fileID: 1140032280379632562, guid: 0418644885795af488e42ca1da94903e, type: 3}
-  - {fileID: 6272723664198754528, guid: 3ddc2238e99fb314b891ed6eab3f34dd, type: 3}
-  - {fileID: 8381162156402516213, guid: 4b16c4d0f7d4d2a4683d734c80e64ec6, type: 3}
-  - {fileID: 3556500429703648160, guid: 8c4488cb6ea724f4fa4ef380d209f02b, type: 3}
-  - {fileID: 5144859212142057888, guid: 4f939063ea468c441b64298471da8d30, type: 3}
-  - {fileID: 1389552037217976893, guid: 4b3ae4592b7d04c42ab41afc583a3d86, type: 3}
-  - {fileID: 8083676941932478842, guid: 5c8e328e3384ed548bb0bc8b13865f40, type: 3}
-  - {fileID: 9092223963320700189, guid: cc66eb5326b06b14caa09c42a470b4f1, type: 3}
-  - {fileID: 4784874822219855851, guid: 5104609da4aeb3042a7ff2f5b50ba05c, type: 3}
-  - {fileID: 907862050792793084, guid: e98be85638995184b8bfd1c13cf609f6, type: 3}
-  - {fileID: 6990998846116681080, guid: 7e3aec4f38bebeb45bab2d46fbaf36de, type: 3}
-  - {fileID: 1603176346153166891, guid: e5804aa488a7e4b48b70b178644cd960, type: 3}
-  desertEndCaps: []
+  - {fileID: 1140032280379632562, guid: 909678e432872524089f1ef98dd7062c, type: 3}
+  - {fileID: 6272723664198754528, guid: dee0499760048a745be3219bf27f60e3, type: 3}
+  - {fileID: 8381162156402516213, guid: 4f19d7b4b21feb944a4cd6b23c974139, type: 3}
+  - {fileID: 3556500429703648160, guid: adba2bcb068d7304bb38e4666741fe52, type: 3}
+  - {fileID: 5144859212142057888, guid: cd65735b5a6c0de428a7a1e8991b4a1d, type: 3}
+  - {fileID: 1389552037217976893, guid: d410efb337bbb62428e1b43a6c3ce377, type: 3}
+  - {fileID: 8083676941932478842, guid: efb72469461a63046b1e27c8a2e62f85, type: 3}
+  - {fileID: 9092223963320700189, guid: effa1438f7ab7c341bdcb2e78ef921fd, type: 3}
+  - {fileID: 4784874822219855851, guid: 76ddc5c2516a21742a9f84d8b862e238, type: 3}
+  - {fileID: 907862050792793084, guid: 4308a5b5241f40d41bc9411485d7e05b, type: 3}
+  - {fileID: 6990998846116681080, guid: 9cb22d8003bd30d41b819b6702278d59, type: 3}
+  - {fileID: 1603176346153166891, guid: 9299cb54c378244408239a5c0383ebd0, type: 3}
+  desertEndCaps:
+  - {fileID: 2186889206495362921, guid: 58de0cc511eac3445b3317e6f770c71e, type: 3}
+  - {fileID: 1533184502168713942, guid: 1f01ee14be065b1479043fc8443a6bb7, type: 3}
+  - {fileID: 8242793892695070059, guid: 074104c5315b5bf4c83a154d6077f298, type: 3}
+  - {fileID: 1406099816043948955, guid: 945f1ea5e5731e343b3a03c3e3cf0c41, type: 3}
+  - {fileID: 2981428522233562265, guid: 677298c9ceef4984186bb3dfd9bca2c0, type: 3}
+  - {fileID: 3038892780745809079, guid: 5054a388f3fe7f342ab4b8d4c1164abf, type: 3}
+  - {fileID: 7515699371412530160, guid: bfe5d023f19e38641af971c7ff0bffa7, type: 3}
+  - {fileID: 7200958672677768717, guid: 75e6977d0ea833847abf24ed45878a9f, type: 3}
+  - {fileID: 7795780605445054599, guid: f3fad587cc24e9b4c99a1197c0bbee2c, type: 3}
+  - {fileID: 6520721891666134788, guid: 9217fd237aafc144896a9606462a10c4, type: 3}
+  - {fileID: 5273955370411065037, guid: e67e58a1be34d8c4b8868d74eaa6e542, type: 3}
+  - {fileID: 8273250051625341269, guid: e6be104f7c0dbae40971229527e48f8c, type: 3}
   baseEndCaps:
-  - {fileID: 4192437691225818197, guid: 003dfcf24601571448a6babf95ad24ad, type: 3}
-  - {fileID: 587549498950053559, guid: d7a53d46d500f924297ee47c696616c6, type: 3}
-  - {fileID: 463342461202645871, guid: 85cf473a99abc0c488316758a3528017, type: 3}
-  - {fileID: 3583009312013524089, guid: b802c8445276acc43ac9b7bd7ee72c00, type: 3}
-  - {fileID: 6197244169717468111, guid: 49032a940572e214492af83682b36abe, type: 3}
-  - {fileID: 3994167631857064872, guid: 7e15a7a7881c2c74a880241c51bf05b6, type: 3}
-  - {fileID: 8360127277428560046, guid: 5a12dc2cb216fa44d8e9b5393eb340d8, type: 3}
-  - {fileID: 7120584300554570077, guid: 992d5a6a3b0081546be2dc677715c3e9, type: 3}
-  - {fileID: 8729529960726427402, guid: 58b94796f6f5fa94786b29d6de00ea6e, type: 3}
-  - {fileID: 5065618390496921394, guid: 35c98879f169ef847866ea8df36d6d1f, type: 3}
-  - {fileID: 2696983996913342843, guid: 9a25cec933289bf46a9817db37ed77cc, type: 3}
-  - {fileID: 7894326879300091267, guid: 9ca390e6d96177a49bc0324e15945a1a, type: 3}
-  stationEndCaps: []
+  - {fileID: 4192437691225818197, guid: 1803d39ff06200a48ac8a5eca5ebe2a8, type: 3}
+  - {fileID: 587549498950053559, guid: efac8675f4061f34aac3d250b748a68e, type: 3}
+  - {fileID: 463342461202645871, guid: be8c660d8c8e0064eb74ba21bcc3735b, type: 3}
+  - {fileID: 3583009312013524089, guid: 21c049b97df52f94c8a1662bf354bdae, type: 3}
+  - {fileID: 6197244169717468111, guid: 9e7729ade604e1545bae80f9fe452a49, type: 3}
+  - {fileID: 3994167631857064872, guid: d50b65b42619c4449869b306a56c5abc, type: 3}
+  - {fileID: 8360127277428560046, guid: 33ae9c8a3ecf6a440bb6e19bfae3367a, type: 3}
+  - {fileID: 7120584300554570077, guid: abc8377c9e201d34bb13fe256a3078b4, type: 3}
+  - {fileID: 8729529960726427402, guid: 2010e78d0d13459418fa9ef4bc68521e, type: 3}
+  - {fileID: 5065618390496921394, guid: 38cb010a17e0e814ca7d4db0a1e42fcd, type: 3}
+  - {fileID: 2696983996913342843, guid: 7306218aaf11cdf428be240d34ec571d, type: 3}
+  - {fileID: 7894326879300091267, guid: 49011056a2579144cafd8f9d838df60d, type: 3}
+  stationEndCaps:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerSpawns: []
   enemySpawns: []
   objectiveSpawns: []

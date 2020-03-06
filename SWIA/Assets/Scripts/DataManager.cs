@@ -59,7 +59,7 @@ public class DataManager : MonoBehaviour
         {
             UnitType ut;
             //if (GSC.gameType == 1)
-                ut = heroTypes[i+2]; // unitTypes[CharacterSelection.party[i]];
+                ut = heroTypes[i]; // unitTypes[CharacterSelection.party[i]];
             //else
             //    ut = heroTypes[CharacterSelection.party[i]];
             Vector3 position = GSC.generator.playerSpawns[i] + ut.tileVisualPrefab.transform.position;
