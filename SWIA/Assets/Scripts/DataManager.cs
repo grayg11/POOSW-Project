@@ -159,7 +159,7 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    int startingEnemies()
+    public int startingEnemies()
     {
         int max = GSC.generator.enemySpawns.Count;
         int val;
@@ -182,7 +182,7 @@ public class DataManager : MonoBehaviour
         return val;
     }
 
-    int pickEnemy()
+    public int pickEnemy()
     {
         int val = 0;
 
