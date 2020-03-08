@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class DataManagerTests : MonoBehaviour
 {
     [Test]
-    public void sceneChangesWhenPartyFull()
+    public void SceneChangesWhenPartyFull()
     {
         var test = new GameObject().AddComponent<CharacterSelection>();
 
@@ -56,7 +56,7 @@ public class DataManagerTests : MonoBehaviour
     }
 
     [Test]
-    public void enemiesCreated()
+    public void EnemiesCreated()
     {
         var test = new GameObject().AddComponent<DataManager>();
 
@@ -65,7 +65,7 @@ public class DataManagerTests : MonoBehaviour
     }
 
     [Test]
-    public void objectivesCreated()
+    public void ObjectivesCreated()
     {
         var test = new GameObject().AddComponent<DataManager>();
 
@@ -75,7 +75,7 @@ public class DataManagerTests : MonoBehaviour
     }
 
     [Test]
-    public void enemiesStarted()
+    public void EnemiesStarted()
     {
         var test = new GameObject().AddComponent<DataManager>();
 
@@ -97,7 +97,7 @@ public class DataManagerTests : MonoBehaviour
     }
 
     [Test]
-    public void enemyPicked()
+    public void EnemyPicked()
     {
         var test = new GameObject().AddComponent<DataManager>();
         Assert.AreEqual((test.pickEnemy() > 0), true);
