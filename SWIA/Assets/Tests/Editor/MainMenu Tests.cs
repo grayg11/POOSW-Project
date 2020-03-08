@@ -60,4 +60,60 @@ public class MainMenuTests
         // Assert
         Assert.AreEqual(name, "SkirmishLevel3");
     }
+
+    [Test]
+    public void difficultyChangesWhenButtonSelectedInSkirmish()
+    {
+
+        var test = new GameObject().AddComponent<mainmenu>();
+        var testGSC = new GameObject().AddComponent<GameStateController>();
+        
+        test.skirmishChoser(0);
+
+        int diff = testGSC.gameType;
+        Assert.AreEqual(0, diff);
+
+        test.skirmishChoser(1);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(1, diff);
+
+        test.skirmishChoser(2);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(2, diff);
+
+        test.skirmishChoser(-1);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(0, diff);
+    }
+
+    [Test]
+    public void difficultyChangesWhenButtonSelectedInCampaign()
+    {
+
+        var test = new GameObject().AddComponent<mainmenu>();
+        var testGSC = new GameObject().AddComponent<GameStateController>();
+
+        test.campaignChoser(0);
+
+        int diff = testGSC.gameType;
+        Assert.AreEqual(0, diff);
+
+        test.campaignChoser(1);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(1, diff);
+
+        test.campaignChoser(2);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(2, diff);
+
+        test.campaignChoser(-1);
+
+        diff = testGSC.gameType;
+        Assert.AreEqual(0, diff);
+    }
 }
