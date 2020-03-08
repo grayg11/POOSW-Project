@@ -81,7 +81,7 @@ public class DataManagerTests : MonoBehaviour
 
         int max = test.GSC.generator.enemySpawns.Count;
         int val = test.startingEnemies();
-
+        
         if (test.GSC.difficulty == 0) // easy
         {
             Assert.AreEqual((val == max || (val >= 2 && val <= 4)), true);
@@ -99,7 +99,7 @@ public class DataManagerTests : MonoBehaviour
     [Test]
     public void enemyPicked()
     {
-
-
+        var test = new GameObject().AddComponent<DataManager>();
+        Assert.AreEqual((test.pickEnemy() > 0), true);
     }
 }
