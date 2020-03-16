@@ -87,3 +87,19 @@ Ian Pleau
 - [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
 - [Manual Tests](https://docs.google.com/spreadsheets/d/1JcxUd5jpfakA8re_4uaFiIWlIkV9ZzQa8ZSrNnL_3fI/edit?usp=sharing)
 - [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
+
+## Sprint 7
+
+- [Requirements](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1623258513)
+- [Trello Board](https://trello.com/b/GcXE8c1x/swia-board)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=956454305)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
+- Design Documents:
+  - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
+  - [Product Demonstration](https://www.youtube.com/watch?v=HmCT_gQRnlU)
+- [Code](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Scripts)
+- [Tests](https://github.com/grayg11/POOSW-Project/tree/master/SWIA/Assets/Tests/Editor)
+- [Manual Tests](https://docs.google.com/spreadsheets/d/1JcxUd5jpfakA8re_4uaFiIWlIkV9ZzQa8ZSrNnL_3fI/edit?usp=sharing)
+- [Responsibilities](https://github.com/grayg11/POOSW-Project/blob/master/Design/Responsibilities.md)
+
+## Sprint 8
