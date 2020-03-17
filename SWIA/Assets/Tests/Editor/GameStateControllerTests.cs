@@ -12,7 +12,6 @@ public class GameStateControllerTests : MonoBehaviour
     {
         var test = new GameObject().AddComponent<GameStateController>();
 
-        test.Start();
         Assert.AreEqual(test.activated, new int[4]);
         Assert.AreEqual(test.heroes, new List<GameObject>());
         Assert.AreEqual(test.enemies, new List<GameObject>());
