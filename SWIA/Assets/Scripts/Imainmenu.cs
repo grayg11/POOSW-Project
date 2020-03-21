@@ -12,7 +12,6 @@
     void rules();
     void skirmish();
     void skirmishBack();
-    void gameModeBack();
     void skirmishChoser(int number);
     void skirmishSelect(int difficulty);
     void skirmishStart();

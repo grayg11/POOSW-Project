@@ -9,7 +9,7 @@ public class mainmenu : MonoBehaviour
 {
     void Start()
     {
-     
+
     }
 
     public Button gamemodeBut;
@@ -17,7 +17,6 @@ public class mainmenu : MonoBehaviour
     public Button rulesBut;
     public Button exitGameBut;
     public Button skirmishBut;
-    public Button gameModeBackBut;
     public Button sEasy;
     public Button sNorm;
     public Button sHard;
@@ -48,19 +47,6 @@ public class mainmenu : MonoBehaviour
         skirmishBut.gameObject.SetActive(true);
         campaignBut.gameObject.SetActive(true);
         RNGBut.gameObject.SetActive(true);
-        gameModeBackBut.gameObject.SetActive(true);
-    }
-
-    public void gameModeBack()
-    {
-        gamemodeBut.transform.gameObject.SetActive(true);
-        loadGameBut.gameObject.SetActive(true);
-        rulesBut.gameObject.SetActive(true);
-        exitGameBut.gameObject.SetActive(true);
-        skirmishBut.gameObject.SetActive(false);
-        campaignBut.gameObject.SetActive(false);
-        RNGBut.gameObject.SetActive(false);
-        gameModeBackBut.gameObject.SetActive(false);
     }
 
     public void loadGame()
@@ -82,7 +68,6 @@ public class mainmenu : MonoBehaviour
     {
         skirmishBut.gameObject.SetActive(false);
         campaignBut.gameObject.SetActive(false);
-        gameModeBackBut.gameObject.SetActive(false);
         RNGBut.gameObject.SetActive(false);
         skirmishPanel.SetActive(true);
     }
@@ -142,14 +127,12 @@ public class mainmenu : MonoBehaviour
         skirmishBut.gameObject.SetActive(true);
         campaignBut.gameObject.SetActive(true);
         RNGBut.gameObject.SetActive(true);
-        gameModeBackBut.gameObject.SetActive(true);
         skirmishPanel.SetActive(false);
     }
     public void campaign()
     {
         skirmishBut.gameObject.SetActive(false);
         campaignBut.gameObject.SetActive(false);
-        gameModeBackBut.gameObject.SetActive(false);
         RNGBut.gameObject.SetActive(false);
         campaignPanel.SetActive(true);
     }
@@ -210,7 +193,6 @@ public class mainmenu : MonoBehaviour
         skirmishBut.gameObject.SetActive(true);
         campaignBut.gameObject.SetActive(true);
         RNGBut.gameObject.SetActive(true);
-        gameModeBackBut.gameObject.SetActive(true);
         campaignPanel.SetActive(false);
     }
 
