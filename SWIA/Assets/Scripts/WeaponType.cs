@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class WeaponType
 {
     public string name;
+    public int tier;
     public int[] weaponDice;
     public List<WeaponAbility> weaponAbilities;
     public int[] surgeAbilities;
@@ -90,4 +91,9 @@ public class WeaponAbility
     /// become focused and attack, figures dont block LOS for 2 actions
     /// </summary>
     public bool reach;
+    public bool pierce1;
+    public bool acc1;
+    public bool acc2;
+    public bool acc6;
+    public bool dmg1;
 }
