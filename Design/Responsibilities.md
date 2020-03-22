@@ -1,6 +1,6 @@
 
-Graham - Testing and implementing player movement and player/enemy stats
-  - User Story: 5, 14, 18
+Graham - Testing and implementing player movement and player/enemy stats. Working on player User Interface.
+  - User Story: 5, 14, 18, 13
 
 Ian - Adding Weapon Types for the primary Gameplay 
   - User Story: 1, 2
