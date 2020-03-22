@@ -64,13 +64,13 @@ MonoBehaviour:
     weaponDice: 0200000001000000
     weaponAbilities: []
     surgeAbilities: 0d000000010000000300000007000000
-    weaponImage: {fileID: 0}
+    weaponImage: {fileID: 21300000, guid: eb2d527c222ad0244a4debaae09e79a1, type: 3}
   - name: Vibroblade
     tier: 1
     weaponDice: 0200000002000000
     weaponAbilities: []
     surgeAbilities: 0c0000000000000004000000
-    weaponImage: {fileID: 0}
+    weaponImage: {fileID: 21300000, guid: 4c29a6bf9c7c80a4fa4ceec64e213686, type: 3}
   - name: DL-44
     tier: 1
     weaponDice: 0300000001000000
