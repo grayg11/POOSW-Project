@@ -1,6 +1,6 @@
 
-Graham - Testing Main Menu and Charater Select Scenes, Implementing Pathfinding for player movement
-  - User Story: 3, 4
+Graham - Testing and implementing player movement and player/enemy stats
+  - User Story: 5, 14, 18
 
 Ian - Adding Weapon Types for the primary Gameplay 
   - User Story: 1, 2
