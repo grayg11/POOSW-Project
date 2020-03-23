@@ -10,13 +10,13 @@ public class AudioManagerTests
     {
         var test = new GameObject().AddComponent<AudioManager>();
         
-        if (test.GetInstanceID != null)
+        if (AudioManager.instance != null)
         {
             test.Awake();
 
-            Assert.AreEqual(test.instance, test);
+            Assert.AreEqual(AudioManager.instance, test);
 
-            foreach (Sound s in sounds)
+            foreach (Sound s in test.sounds)
             {
                 Assert.AreEqual(s.source.clip, s.clip);
                 Assert.AreEqual(s.source.loop, s.loop);
@@ -25,6 +25,4 @@ public class AudioManagerTests
             }
         }
     }
-
-
 }
