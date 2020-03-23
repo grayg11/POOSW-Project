@@ -82,6 +82,7 @@ public class GameUI : MonoBehaviour
     public void Rest()
     {
         player.actions--;
+        RestHeal();
         GSC.ChangeState<RestState>();
     }
 
@@ -127,6 +128,22 @@ public class GameUI : MonoBehaviour
             findNextState();
     }
 
+    public void RestHeal()
+    {
+        audioManager.Play("MenuInteract");
+        if (player.health < player.maxHealth - 3)
+            player.health += 3;
+        else
+            player.health = player.maxHealth;
+
+        GSC.gameUI.transform.GetChild(3).gameObject.SetActive(false);
+
+        if (player.actions <= 0 && (player.movement <= 0 || player.movement == player.MaxMovemment))
+            GSC.ChangeState<PlayerEndState>();
+        else
+            findNextState();
+    }
+
     public void dontMove()
     {
         audioManager.Play("MenuInteract");
@@ -146,7 +163,6 @@ public class GameUI : MonoBehaviour
         else
             dontMove();
     }
-
 
     public void actionButton()
     {
