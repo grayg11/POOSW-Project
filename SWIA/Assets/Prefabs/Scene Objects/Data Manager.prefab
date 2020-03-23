@@ -52,6 +52,115 @@ MonoBehaviour:
   maxY: 0
   tilesLen: 0
   allTilesLen: 0
+  allWeapons:
+  - name: Dh-17
+    tier: 1
+    weaponDice: 0200000001000000
+    weaponAbilities: []
+    surgeAbilities: 0a00000010000000
+    weaponImage: {fileID: 21300000, guid: 6ed2b001d264f9a4f8a536623f07a7a2, type: 3}
+  - name: Armored Gauntlets
+    tier: 1
+    weaponDice: 0200000001000000
+    weaponAbilities: []
+    surgeAbilities: 0d000000010000000300000007000000
+    weaponImage: {fileID: 21300000, guid: eb2d527c222ad0244a4debaae09e79a1, type: 3}
+  - name: Vibroblade
+    tier: 1
+    weaponDice: 0200000002000000
+    weaponAbilities: []
+    surgeAbilities: 0c0000000000000004000000
+    weaponImage: {fileID: 21300000, guid: 4c29a6bf9c7c80a4fa4ceec64e213686, type: 3}
+  - name: DL-44
+    tier: 1
+    weaponDice: 0300000001000000
+    weaponAbilities: []
+    surgeAbilities: 010000000f000000
+    weaponImage: {fileID: 21300000, guid: 6e88b151d86b57d49a9b5f9a8746f5f3, type: 3}
+  - name: E-11
+    tier: 1
+    weaponDice: 0300000002000000
+    weaponAbilities: []
+    surgeAbilities: 010000000a000000
+    weaponImage: {fileID: 21300000, guid: ae7f21f893f602c44b0fc64c3752a6f0, type: 3}
+  - name: BD-1 Vibro-Ax
+    tier: 2
+    weaponDice: 0000000002000000
+    weaponAbilities:
+    - reach: 1
+      pierce1: 0
+      acc1: 0
+      acc2: 0
+      acc6: 0
+      dmg1: 0
+    surgeAbilities: 1100000004000000
+    weaponImage: {fileID: 21300000, guid: dea30bb5065bca84dba1b909ecf13ea9, type: 3}
+  - name: Vibro Knucklers
+    tier: 2
+    weaponDice: 0200000001000000
+    weaponAbilities: []
+    surgeAbilities: 040000000100000013000000
+    weaponImage: {fileID: 21300000, guid: 361df545f94fd17489abe6d53c8a1f61, type: 3}
+  - name: 434 "Deathhammer"
+    tier: 2
+    weaponDice: 0300000000000000
+    weaponAbilities:
+    - reach: 0
+      pierce1: 0
+      acc1: 0
+      acc2: 0
+      acc6: 0
+      dmg1: 1
+    surgeAbilities: 000000000a000000
+    weaponImage: {fileID: 21300000, guid: 9eb4311f1e3a8a14d996cff54fc18974, type: 3}
+  - name: T-21
+    tier: 2
+    weaponDice: 020000000200000001000000
+    weaponAbilities: []
+    surgeAbilities: 
+    weaponImage: {fileID: 21300000, guid: a0fef1e783c805f4a91c8698f4556568, type: 3}
+  - name: A280
+    tier: 2
+    weaponDice: 0300000002000000
+    weaponAbilities: []
+    surgeAbilities: 
+    weaponImage: {fileID: 21300000, guid: 27b8bef7f3ed13541893cf407a7c6ed3, type: 3}
+  - name: Pulse Cannon
+    tier: 3
+    weaponDice: 030000000200000001000000
+    weaponAbilities: []
+    surgeAbilities: 01000000070000000a000000
+    weaponImage: {fileID: 21300000, guid: 17345642ee675844dbef2fbe5ca3a77b, type: 3}
+  - name: Force Pike
+    tier: 3
+    weaponDice: 000000000100000001000000
+    weaponAbilities:
+    - reach: 1
+      pierce1: 0
+      acc1: 0
+      acc2: 0
+      acc6: 0
+      dmg1: 0
+    surgeAbilities: 00000000000000000d000000
+    weaponImage: {fileID: 21300000, guid: 0f1e48c70c9474046945ecc37a4d94e5, type: 3}
+  - name: Sporting Blaster
+    tier: 3
+    weaponDice: 030000000100000001000000
+    weaponAbilities: []
+    surgeAbilities: 0d00000000000000080000000a000000
+    weaponImage: {fileID: 21300000, guid: f7ff55b47dea5374c861b9694662f766, type: 3}
+  - name: DXR-6
+    tier: 3
+    weaponDice: 0000000000000000
+    weaponAbilities:
+    - reach: 0
+      pierce1: 0
+      acc1: 0
+      acc2: 0
+      acc6: 1
+      dmg1: 0
+    surgeAbilities: 0100000008000000
+    weaponImage: {fileID: 21300000, guid: cba603a689338bd468efcd27074d6022, type: 3}
   heroTypes:
   - name: Diala
     tileVisualPrefab: {fileID: 494487074282523883, guid: 35f0023095c550c4ab5393d5bfcbbda4,
@@ -66,9 +175,15 @@ MonoBehaviour:
     tech: 03000000
     weapon:
       name: Plasteel Staff
+      tier: 0
       weaponDice: 0100000002000000
       weaponAbilities:
       - reach: 1
+        pierce1: 0
+        acc1: 0
+        acc2: 0
+        acc6: 0
+        dmg1: 0
       surgeAbilities: 0d00000000000000
       weaponImage: {fileID: 21300000, guid: f907c76244f232c4a8f7e1deb63fb46e, type: 3}
     playerImage: {fileID: 21300000, guid: 474197788b8d765429e0035d46462664, type: 3}
@@ -86,6 +201,7 @@ MonoBehaviour:
     tech: 0200000003000000
     weapon:
       name: Infantry Rifle
+      tier: 0
       weaponDice: 0200000003000000
       weaponAbilities: []
       surgeAbilities: 0000000009000000
@@ -105,6 +221,7 @@ MonoBehaviour:
     tech: 0200000003000000
     weapon:
       name: Vibro-Ax
+      tier: 0
       weaponDice: 0000000001000000
       weaponAbilities: []
       surgeAbilities: 0700000003000000
@@ -124,6 +241,7 @@ MonoBehaviour:
     tech: 0200000003000000
     weapon:
       name: Holdout Blaster
+      tier: 0
       weaponDice: 0100000003000000
       weaponAbilities: []
       surgeAbilities: 08000000
@@ -143,6 +261,7 @@ MonoBehaviour:
     tech: 010000000200000003000000
     weapon:
       name: Vintage Blaster
+      tier: 0
       weaponDice: 0200000002000000
       weaponAbilities: []
       surgeAbilities: 0000000009000000
@@ -162,6 +281,7 @@ MonoBehaviour:
     tech: 010000000200000003000000
     weapon:
       name: LongBlaster
+      tier: 0
       weaponDice: 0300000003000000
       weaponAbilities: []
       surgeAbilities: 0000000007000000
@@ -182,6 +302,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0200000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -201,6 +322,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0200000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -220,6 +342,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -239,6 +362,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -258,6 +382,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0200000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -277,6 +402,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0200000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -296,6 +422,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 010000000100000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -315,6 +442,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 010000000100000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -334,6 +462,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000001000000
       weaponAbilities: []
       surgeAbilities: 
@@ -353,6 +482,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000001000000
       weaponAbilities: []
       surgeAbilities: 
@@ -372,6 +502,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000003000000
       weaponAbilities: []
       surgeAbilities: 
@@ -391,6 +522,7 @@ MonoBehaviour:
     tech: 
     weapon:
       name: ST Blaster
+      tier: 0
       weaponDice: 0000000003000000
       weaponAbilities: []
       surgeAbilities: 
