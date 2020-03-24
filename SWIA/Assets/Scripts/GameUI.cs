@@ -82,7 +82,7 @@ public class GameUI : MonoBehaviour
     public void Rest()
     {
         player.actions--;
-        RestHeal();
+        //RestHeal(); Needs more work
         GSC.ChangeState<RestState>();
     }
 
