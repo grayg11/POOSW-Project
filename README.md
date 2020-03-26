@@ -106,7 +106,7 @@ Ian Pleau
 
 - [Requirements](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1623258513)
 - [Trello Board](https://trello.com/b/GcXE8c1x/swia-board)
-- [Burndown Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=573555147)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1774683087)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1FrmwKxnhAAYDyPENWQ9W7GMbSH8CaimAFdbkGKsAOu8/edit#gid=1842144464)
 - Design Documents:
   - [System Architecture](https://github.com/grayg11/POOSW-Project/blob/master/System%20Architecture.md)
