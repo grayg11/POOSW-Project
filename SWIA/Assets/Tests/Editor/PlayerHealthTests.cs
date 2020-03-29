@@ -9,7 +9,7 @@ public class PlayerHealthTests
     public void HasStarted()
     {
         var test = new GameObject().AddComponent<PlayerHealth>();
-        var player = GetComponent<Unit>();
+        var player = test.GetComponent<Unit>();
 
         test.Start();
 
@@ -29,7 +29,7 @@ public class PlayerHealthTests
         Assert.AreEqual(test.slider.value, calculatedHealth);
         if (test.health < test.maxHealth)
         {
-            Assert.AreEqual(true, test.healthBarUI.active);
+            Assert.AreEqual(true, test.healthBarUI.activeSelf);
         }
         if (test.health <= 0)
         {
@@ -41,14 +41,14 @@ public class PlayerHealthTests
     public void CanCalculateHealth()
     {
         var test = new GameObject().AddComponent<PlayerHealth>();
-        var player = GetComponent<Unit>();
+        var player = test.GetComponent<Unit>();
 
-        var health = player.health;
-        if (health > maxHealth)
+        float health = player.health;
+        if (health > test.maxHealth)
         {
-            health = maxHealth;
+            health = test.maxHealth;
         } else {
-            health = health / maxHealth;
+            health = health / test.maxHealth;
         }
 
         Assert.AreEqual(health, test.CalculateHealth());
