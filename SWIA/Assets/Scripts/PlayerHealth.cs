@@ -12,14 +12,14 @@ public class PlayerHealth : MonoBehaviour
     public Slider slider;
     Unit player;
 
-    void Start()
+    public void Start()
     {
         player = GetComponent<Unit>();
         health = maxHealth = player.maxHealth;
         slider.value = CalculateHealth();
     }
 
-    void Update()
+    public void Update()
     {
         slider.value = CalculateHealth();
         if(health < maxHealth)
@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    float CalculateHealth()
+    public float CalculateHealth()
     {
         health = player.health;
         if (health > maxHealth)
