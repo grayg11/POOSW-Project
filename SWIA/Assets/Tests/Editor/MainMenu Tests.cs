@@ -116,23 +116,4 @@ public class MainMenuTests
         diff = testGSC.gameType;
         Assert.AreEqual(0, diff);
     }
-
-    [Test]
-    [System.Obsolete]
-    public void gameModeWentBack()
-    {
-        var test = new GameObject().AddComponent<mainmenu>();
-        var testGSC = new GameObject().AddComponent<GameStateController>();
-
-        test.gameModeBack();
-
-        Assert.AreEqual(test.gamemodeBut.gameObject.active, false);
-        Assert.AreEqual(test.loadGameBut.gameObject.active, false);
-        Assert.AreEqual(test.rulesBut.gameObject.active, false);
-        Assert.AreEqual(test.exitGameBut.gameObject.active, false);
-        Assert.AreEqual(test.skirmishBut.gameObject.active, true);
-        Assert.AreEqual(test.campaignBut.gameObject.active, true);
-        Assert.AreEqual(test.RNGBut.gameObject.active, true);
-        Assert.AreEqual(test.gameModeBackBut.gameObject.active, true);
-    }
 }

@@ -74,8 +74,6 @@ public class MapGen : MonoBehaviour
             maxY = int.MinValue;
             foreach (GameObject go in skirmishTiles)
             {
-                if (go == null)
-                    continue;
                 if (go.GetComponent<Room>().minX < minX)
                     minX = go.GetComponent<Room>().minX;
                 if (go.GetComponent<Room>().minY < minY)
