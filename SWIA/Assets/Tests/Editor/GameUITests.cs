@@ -38,33 +38,66 @@ public class GameUITests
     }
 
     [Test]
-    public void HasMovedButton()
+    public void MoveButtonAction()
     {
         var test = GameObject().AddComponent<GameUI>();
+        var actions = test.player.actions;
+
+        test.moveButton();
+
+        if (test.player.actions == 2 || (test.player.actions == 1 && test.player.movement <= 0))
+            Assert.AreEqual(test.player.movement, test.player.MaxMovemment);
+
+        if (test.player.movement == test.player.MaxMovemment)
+            Assert.AreEqual(test.player.actions, actions - 1);
+
+        Assert.AreEqual(test.GSC.CurrentState, MoveState);
     }
 
     [Test]
     public void HasConfirmedMove()
     {
         var test = GameObject().AddComponent<GameUI>();
+
+        test.confirmMove();
+
+        if (test.player.actions <= 0 && (test.player.movement <= 0 || test.player.movement == test.player.MaxMovemment))
+            Assert.AreEqual(test.GSC.CurrentState, PlayerEndState);
     }
 
     [Test]
     public void HasRested()
     {
         var test = GameObject().AddComponent<GameUI>();
+        var actions = test.player.actions;
+
+        test.Rest();
+
+        Assert.AreEqual(test.player.actions, actions - 1);
+        Assert.AreEqual(test.GSC.currentState, RestState);
     }
 
     [Test]
     public void HasChangedRestText()
     {
         var test = GameObject().AddComponent<GameUI>();
+        var testText = "test";
+        test.changeRestText(testText);
+
+        test.changeRestTest(testText);
+        Assert.AreEqual(test.restText.text, testText);
     }
 
     [Test]
     public void AttackButtonAction()
     {
         var test = GameObject().AddComponent<GameUI>();
+        var actions = test.player.actions;
+
+        test.attackButton();
+
+        Assert.AreEqual(test.player.actions, actions - 1);
+        Assert.AreEqual(test.GSC.currentState, AttackState);
     }
 
     [Test]
