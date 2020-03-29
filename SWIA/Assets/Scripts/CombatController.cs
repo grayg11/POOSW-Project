@@ -32,12 +32,12 @@ public class CombatController : MonoBehaviour
     Unit attacker;
     Unit defender;
 
-    int accuracy = 0;
-    int damage = 0;
-    int surge = 0;
-    int block = 0;
-    int evade = 0;
-    int dodge = 0;
+    public int accuracy = 0;
+    public int damage = 0;
+    public int surge = 0;
+    public int block = 0;
+    public int evade = 0;
+    public int dodge = 0;
     List<int> selectedToggles;
     int[] surgeFunction;
     GameObject enemyUI;
