@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: cf96ed31a0b33a84b9ec4d3916530618
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Character Select.unity
     guid: 94beddf2785bebb4ea14511cc5cacf2b
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YouWin.unity
     guid: c808a95300b97034db664909218c0b24
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 3c869bd84be4bda4cbad0ed4e984ca3d
   m_configObjects: {}
