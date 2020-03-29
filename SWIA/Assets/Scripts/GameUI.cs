@@ -7,14 +7,14 @@ using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
-    MouseBehavior mouseBehavior;
-    GameStateController GSC;
-    Unit player;
+    public MouseBehavior mouseBehavior;
+    public GameStateController GSC;
+    public Unit player;
 
     public TMPro.TextMeshProUGUI restText;
     public TMPro.TextMeshProUGUI endText;
 
-    private AudioManager audioManager;
+    public AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
