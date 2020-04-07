@@ -8,16 +8,16 @@ using UnityEngine.UI;
 public class GameUI : MonoBehaviour
 {
     MouseBehavior mouseBehavior;
-    GameStateController GSC;
-    Unit player;
+    public GameStateController GSC;
+    public Unit player;
 
     public TMPro.TextMeshProUGUI restText;
     public TMPro.TextMeshProUGUI endText;
 
-    private AudioManager audioManager;
+    public AudioManager audioManager;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         GSC = GameObject.FindObjectOfType<GameStateController>();
         //mouseBehavior = GameObject.FindObjectOfType<MouseBehavior>();
@@ -31,7 +31,7 @@ public class GameUI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
     }
@@ -153,7 +153,7 @@ public class GameUI : MonoBehaviour
         GSC.ChangeState<ActionState>();
     }
 
-    private void findNextState()
+    public void findNextState()
     {
         if (GSC.gameType == 1)
         {
