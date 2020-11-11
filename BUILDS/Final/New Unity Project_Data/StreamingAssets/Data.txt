@@ -1,0 +1,32 @@
+easyAmountLow, least amount of enemies spawning (int)
+2
+easyAmountHigh, greatest amount of enemies spawning (int)
+4
+normalAmountLow, least amount of enemies spawning (int)
+3
+normalAmountHigh, greatest amount of enemies spawning (int)
+5
+hardAmountLow, least amount of enemies spawning (int)
+4
+hardAmountHigh, greatest amount of enemies spawning (int)
+7
+easyElite, 1 - X = percentage enemy spawned is elite (FLOAT)
+.9
+normalElite, 1 - X = percentage enemy spawned is elite (FLOAT)
+.8
+hardElite, 1 - X = percentage enemy spawned is elite (FLOAT)
+.7
+objEasyMin, a percentage to be multiplied by the number of obj spawns to get the lower bound of a range (FLOAT)
+.4
+objEasyMax, a percentage to be multiplied by the number of obj spawns to get the upper bound of a range (FLOAT)
+.5
+objNormalMin, a percentage to be multiplied by the number of obj spawns to get the lower bound of a range (FLOAT)
+.25
+objNormalMax, a percentage to be multiplied by the number of obj spawns to get the upper bound of a range (FLOAT)
+.4
+objHardMin, a percentage to be multiplied by the number of obj spawns to get the lower bound of a range (FLOAT)
+.1
+objHardMax, a percentage to be multiplied by the number of obj spawns to get the upper bound of a range (FLOAT)
+.3
+midTierHealAmount, a percentage of total health to be healed (FLOAT)
+.25
